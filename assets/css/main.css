@@ -1820,7 +1820,7 @@ input, select, textarea {
 	}
 
 		ul.icons li {
-			display: flex;
+			display: inline-block;
 			padding-left: 0;
 		}
 
@@ -1833,76 +1833,7 @@ input, select, textarea {
 			border: 0;
 		}
 
-/* Form */
 
-	form label {
-		display: block;
-		text-align: left;
-		margin-bottom: 0.5em;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		position: relative;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		outline: 0;
-		background: #fff;
-		background: rgba(255, 255, 255, 0.75);
-		width: 100%;
-		border-radius: 0.35em;
-		padding: 0.75em 1em 0.75em 1em;
-		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-		border: solid 1px rgba(0, 0, 0, 0.15);
-		-moz-transition: all 0.35s ease-in-out;
-		-webkit-transition: all 0.35s ease-in-out;
-		-ms-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
-			background: #fff;
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1.25em;
-	}
-
-	form textarea {
-		min-height: 14em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
-	}
-
-	form :-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
 
 /* Table */
 
@@ -2094,35 +2025,7 @@ input, select, textarea {
 					color: #fff;
 				}
 
-	#logo {
-		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 48px;
-		cursor: default;
-	}
-
-		#logo h1 {
-			position: relative;
-			color: #fff;
-			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
-		}
-
-		#logo p {
-			position: relative;
-			display: block;
-			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
-		}
-
-		#logo .image {
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
+	
 
 	#nav ul {
 		list-style: none;
@@ -2172,57 +2075,97 @@ input, select, textarea {
 						color: #e27689;
 					}
 
+/* Footer */
+
+	#footer {
+		margin-left: 375px;
+		text-align: center;
+		background-color: #dce3e2;
+		padding: 3em 0 4em 0;
+		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+		font-size: 0.8em;
+	}
+
+		#footer .copyright {
+			cursor: default;
+			margin: 0;
+		}
+
+			#footer .copyright li {
+				display: inline-block;
+				line-height: 1em;
+				border-left: solid 1px rgba(128, 128, 128, 0.35);
+				padding: 0 0 0 0.5em;
+				margin: 0 0 0 0.5em;
+			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					padding-left: 0;
+					margin-left: 0;
+				}
 
 /* Main */
 
-#main {
-	margin-left: 375px;
-}
-
-	#main > section {
-		margin: 0;
-		overflow: hidden;
-		padding: 4em 0;
-		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-		text-align: center;
-		background-image: url("images/overlay.png");
+	#main {
+		margin-left: 375px;
 	}
 
-		#main > section.dark {
-			color: #ddd;
-			color: rgba(255, 255, 255, 0.75);
+		#main > section {
+			margin: 0;
+			overflow: hidden;
+			padding: 4em 0;
+			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+			text-align: center;
+			background-image: url("images/overlay.png");
 		}
 
-			#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-				color: inherit;
+			#main > section.dark {
+				color: #ddd;
+				color: rgba(255, 255, 255, 0.75);
 			}
 
-			#main > section.dark strong {
-				color: #fff;
-				border-color: inherit;
-			}
-
-			#main > section.dark a {
-				color: #fff;
-				border-color: inherit;
-			}
-
-				#main > section.dark a:hover {
-					border-bottom-color: rgba(255, 255, 255, 0);
+				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
+					color: inherit;
 				}
 
-		#main > section.cover {
-			padding: 10em 0;
-			background-size: cover;
-			background-position: center center;
-		}
+				#main > section.dark strong {
+					color: #fff;
+					border-color: inherit;
+				}
 
-		#main > section.one {
-			background-color: #bc849a;
-			background-image: url('images/intro.png');
-		}
+				#main > section.dark a {
+					color: #fff;
+					border-color: inherit;
+				}
 
-		
+					#main > section.dark a:hover {
+						border-bottom-color: rgba(255, 255, 255, 0);
+					}
+
+			#main > section.cover {
+				padding: 10em 0;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			#main > section.one {
+				background-color: #81918E;
+				background-image: url("../../images/banner.jpg");
+			}
+
+			#main > section.two {
+				background-color: #f5fafa;
+			}
+
+			#main > section.three {
+				background-color: #ecf1f1;
+			}
+
+			#main > section.four {
+				background-color: #e8edec;
+			}
+
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -2287,7 +2230,6 @@ input, select, textarea {
 
 			ul.icons li a {
 				width: 1.75em;
-
 			}
 
 		/* Item */
@@ -2590,11 +2532,5 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-               
-			#top header h2,
-#top header p {
-    color: #000; /* or any color you like (pink/white/nude) */
-}
-
 
 	}

@@ -4,31 +4,37 @@
   <meta charset="UTF-8">
   <title>Python & Machine Learning Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="my portfolio/assets/css/main.css">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/2d54dc6611.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f8f8;
+      background-image: url('gitimages/yellow.avif');
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
+
     h1 {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 16px;
+      font-weight: bold;
+      color:black;
     }
+
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
+
     .project-card {
-      background: white;
+      background: transparent;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       overflow: hidden;
@@ -36,19 +42,34 @@
       text-decoration: none;
       color: inherit;
     }
+
     .project-card:hover {
       transform: translateY(-5px);
     }
+
     .project-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .project-card h3 {
-      padding: 15px;
-      font-size: 1.2em;
-      background-color: #f1f1f1;
-      margin: 0;
+  width: 100%;
+  height: 140px; /* shorter height makes it rectangular */
+  object-fit: cover; /* keeps image from stretching */
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.project-card h3 {
+  font-size: 0.9em;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4em;
+  font-weight: 600;
+  color:black
+}
+
+
+    @media (min-width: 1024px) {
+      .project-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   </style>
 </head>
@@ -57,36 +78,63 @@
   <div class="container">
     <h1>Python & Machine Learning Projects</h1>
     <div class="project-grid">
-        <article class="item">
-      <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning%20.ipynb" class="project-card" target="_blank">
-        <img src="my portfolio/assets/css/images/credit.jpg" alt="Project 1"> </a>
 
-        <h3>Credit Card Fraud Detection using Python and Machine Learning</h3>
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning%20.ipynb" class="project-card" target="_blank">
+          <img src="gitimages/credit.jpg" alt="Project 1">
+          <h3>Credit Card Fraud Detection using Python and Machine Learning</h3>
+        </a>
+      </article> 
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/tree/main/TIME%20SERIES%20FORECASTING%20AND%20ANALYSIS%20-%20ARIMA%20AND%20SEASONAL%20-%20ARIMA" class="project-card" target="_blank">
+          <img src="gitimages/time.png" alt="Project 2">
+          <h3>Time Series Forecasting analysis</h3>
+        </a>
       </article>
-      <a href="https://github.com/yourusername/project2" class="project-card" target="_blank">
-        <img src="my portfolio/images/project2.jpg" alt="Project 2">
-        <h3>Customer Segmentation using K-Means</h3>
-      </a>
 
-      <a href="https://github.com/yourusername/project3" class="project-card" target="_blank">
-        <img src="my portfolio/images/project3.jpg" alt="Project 3">
-        <h3>Movie Recommendation System</h3>
-      </a>
-      <a href="https://github.com/yourusername/project3" class="project-card" target="_blank">
-        <img src="my portfolio/images/project3.jpg" alt="Project 3">
-        <h3>Movie Recommendation System</h3>
-      </a>
-      <a href="https://github.com/yourusername/project3" class="project-card" target="_blank">
-        <img src="my portfolio/images/project3.jpg" alt="Project 3">
-        <h3>Movie Recommendation System</h3>
-      </a>
-      <a href="https://github.com/yourusername/project3" class="project-card" target="_blank">
-        <img src="my portfolio/images/project3.jpg" alt="Project 3">
-        <h3>Movie Recommendation System</h3>
-      </a>
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Customer%20Lifetime%20Value%20Analysis/Customer%20Lifetime%20Value%20Analysis.ipynb" class="project-card" target="_blank">
+          <img src="gitimages/customer.webp" alt="Project 3">
+          <h3>Customer Lifetime Value Analysis</h3>
+        </a>
+      </article>
 
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/tree/main/Stock%20Market%20Performance%20Analysis%20using%20Python" class="project-card" target="_blank">
+          <img src="gitimages/stock.jpeg" alt="Project 4">
+          <h3>Stock Market Performance Analysis using Python</h3>
+        </a>
+      </article>
 
-      <!-- Add more projects below -->
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Dragon%20Real%20Estate%20Price%20Prediction%20ML%20Project/Dragon%20Real%20Estate%20Price%20Prediction%20ML%20Project.ipynb" class="project-card" target="_blank">
+          <img src="gitimages/price.jpg" alt="Project 5">
+          <h3>Dragon Real Estate Price Prediction ML Project</h3>
+        </a>
+      </article>
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/tree/main/EDA%20%2CCustomer%20Segmentation%20using%20RFM%20and%20KMeans" class="project-card" target="_blank">
+          <img src="gitimages/segment.jpeg" alt="Project 6">
+          <h3>EDA, Customer Segmentation using RFM and KMeans</h3>
+        </a>
+      </article>
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/tree/main/Super%20Market%20Sales%20EDA%20(Exploratory%20Data%20Analysis)" class="project-card" target="_blank">
+          <img src="gitimages/sales.jpeg" alt="Project 7">
+          <h3>Super Market Sales EDA (Exploratory Data Analysis)</h3>
+        </a>
+      </article>
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/tree/main/Predicting%20Customer%20Churn%20in%20Telecommunication" class="project-card" target="_blank">
+          <img src="gitimages/churn.jpeg" alt="Project 8">
+          <h3>Predicting Customer Churn in Telecommunication</h3>
+        </a>
+      </article>
+
     </div>
   </div>
 
