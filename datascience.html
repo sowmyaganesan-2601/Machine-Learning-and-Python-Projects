@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python & Machine Learning Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      background-image: url('gitimages/yellow.avif');
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-weight: bold;
+      color:black;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: transparent;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+  width: 100%;
+  height: 140px; /* shorter height makes it rectangular */
+  object-fit: cover; /* keeps image from stretching */
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.project-card h3 {
+  font-size: 0.9em;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4em;
+  font-weight: 600;
+  color:black
+}
+
+
+    @media (min-width: 1024px) {
+      .project-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tableau Projects</h1>
+    <div class="project-grid">
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning%20.ipynb" class="project-card" target="_blank">
+          <img src="gitimages/credit.jpg" alt="Project 1">
+          <h3>Employee Satisfaction and Engagement Prediction Aanlysis</h3>
+        </a>
+      </article> 
+
+      <article class="item">
+        <a href="https://github.com/sowmyaganesan-2601/Machine-Learning-and-Python-Projects/blob/main/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning/Credit%20Card%20Fraud%20Detection%20using%20Python%20and%20Machine%20Learning%20.ipynb" class="project-card" target="_blank">
+          <img src="gitimages/credit.jpg" alt="Project 1">
+          <h3>Real-Time Sentiment Analysis App</h3>
+        </a>
+      </article> 
+    </div>
+  </div>
+
+</body>
+</html>
