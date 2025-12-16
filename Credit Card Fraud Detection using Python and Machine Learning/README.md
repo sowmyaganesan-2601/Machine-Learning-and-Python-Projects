@@ -1,11 +1,11 @@
-1) Project Overview
+## Project Overview
 
 Credit card fraud is a major challenge in the global financial industry.
 This project uses Python and Machine Learning to analyze real transaction data and build predictive models that can identify fraudulent transactions.
 
 The goal is to support risk management teams and fraud analysts by improving fraud detection accuracy while reducing false positives.
 
-2) Business Problem
+## Business Problem
 
 Financial institutions lose millions of dollars annually due to fraudulent transactions.
 The key challenges include:
@@ -26,7 +26,7 @@ Enhance customer trust
 
 Improve fraud investigation efficiency
 
-3) Dataset
+## Dataset
 
 The dataset contains credit card transactions made by European cardholders.
 
@@ -42,7 +42,7 @@ Other features (V1–V28) are PCA-transformed
 
 Highly imbalanced dataset
 
-4) Data Preprocessing
+## Data Preprocessing
 
 Steps performed:
 
@@ -58,7 +58,7 @@ Train-test split (80/20)
 
 (Recommendation for future) Apply SMOTE / resampling
 
-5) Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 Visualizations include:
 
@@ -72,7 +72,7 @@ Correlation heatmap
 
 Feature distributions
 
-6) Key insights:
+## Key insights:
 
 Fraud transactions tend to have lower monetary amounts
 
@@ -80,7 +80,7 @@ Very strong class imbalance
 
 PCA-transformed features show distinct patterns
 
-7) Machine Learning Models Used
+## Machine Learning Models Used
 - Decision Tree Classifier
 
 Simple model to establish baseline performance.
@@ -113,9 +113,8 @@ Confusion Matrix
 
 Classification Report
 
-Why these metrics matter:
-
-## For fraud detection, Recall is the MOST important metric
+### Why these metrics matter:
+For fraud detection, Recall is the MOST important metric
 
 Because:
 
@@ -154,7 +153,8 @@ Imbalanced-learn (planned for SMOTE)
 
 Jupyter Notebook
 
-Conclusion
+## Conclusion
 
 This project demonstrates how machine learning can support financial institutions by detecting fraudulent transactions more effectively. With further improvements such as SMOTE, feature importance analysis, and an API layer, the system can be used in real-world risk management scenarios.
+
 
