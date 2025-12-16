@@ -97,7 +97,7 @@ XGBoost (industry standard for fraud detection)
 
 SMOTE oversampling
 
-📈 Model Evaluation
+## Model Evaluation
 
 Metrics used:
 
@@ -115,7 +115,7 @@ Classification Report
 
 Why these metrics matter:
 
-➤ For fraud detection, Recall is the MOST important metric
+## For fraud detection, Recall is the MOST important metric
 
 Because:
 
@@ -125,7 +125,7 @@ False Positive = Inconvenience to customer
 
 The model aims to balance customer experience with loss prevention.
 
-🔍 Key Findings
+## Key Findings
 
 Random Forest performed better than Decision Tree
 
@@ -136,7 +136,7 @@ Recall improved significantly after tuning
 Fraud patterns show distinct feature distributions
 
 
-🛠️ Tech Stack
+## Tech Stack
 
 Python
 
@@ -157,3 +157,4 @@ Jupyter Notebook
 Conclusion
 
 This project demonstrates how machine learning can support financial institutions by detecting fraudulent transactions more effectively. With further improvements such as SMOTE, feature importance analysis, and an API layer, the system can be used in real-world risk management scenarios.
+
